@@ -11,12 +11,16 @@ public class Task {
     private LocalDateTime creationDate;
 
 
-    public Task(int id, String description, String title, LocalDateTime creationDate, TaskStatus status) {
+    public Task(int id, String description, String title,  TaskStatus status) {
         this.id = id;
         this.description = description;
-        this.creationDate = creationDate;
+        this.creationDate = LocalDateTime.now();
         this.status = status;
         this.title = title;
+    }
+
+    public Task() {
+
     }
 
 
